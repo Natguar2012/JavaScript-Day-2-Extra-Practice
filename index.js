@@ -6,6 +6,11 @@ const toppings = ['Mushrooms ', 'Tomatoes', 'Eggs', 'Chili', 'Lettuce', 'Avocado
 TASK 1 🚀
 // The customer would like to see the topping options, console log out each of the toppings one by one in the array above 
 */
+toppings.forEach(function(item){
+    //item = toppings[i]
+    console.log(item)
+})
+
 
 
 /*
@@ -15,6 +20,13 @@ for example you no longer have any onions and need to remove it from the list of
 Use .forEach() - hint - you will need to include the index in the callback
  */
 
+function removeItem(array, item){
+    let newArray = []
+    array.forEach(function(index){
+        if(index !== item){
+            newArray.push(index)
+    }
+})
 
 
 /*
@@ -42,6 +54,9 @@ const vacations = [
 TASK 4 🚀
 // The travel agent would like to send a couple on their honeymoon to a location with a beach and a temperature above 90 degrees. return their options in a new array 
 */
+vacations.filter(function(item){
+    return temperature 
+}
 
 
 
@@ -72,3 +87,6 @@ Find the airport codes for each of the cities in the vacation array and write a 
 hint - your function should include array, index and code as parameters
 you will need to invoke the function each time you wish to add a new code
 */
+  
+
+
